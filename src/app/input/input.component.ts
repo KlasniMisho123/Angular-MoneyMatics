@@ -25,10 +25,19 @@ export class InputComponent {
       duration: this.duration,
       return: this.return
     }
-    console.log("userInputData: ", this.userInputData)
+  }
+
+  clearData() {
+    this.initialInvestment = 0;
+    this.anualInvestment = 0;
+    this.duration = 0;
+    this.return = 0;
+    this.userInputData = {}
   }
 
   onSubmit() {
-    // console.log("submited")
+    this.setData()
+    console.log("userInputData: ", this.userInputData)
+    this.clearData() 
   }
 }
