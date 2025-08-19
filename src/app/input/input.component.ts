@@ -11,7 +11,7 @@ import { FormsModule  } from '@angular/forms';
 export class InputComponent {
 
   initialInvestment = 0;
-
+  anualInvestment = 0;
   setData() {
     console.log("initialInvestment: ", this.initialInvestment)
   }
