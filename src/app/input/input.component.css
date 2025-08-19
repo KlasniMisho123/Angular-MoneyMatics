@@ -1,18 +1,3 @@
-.input-grid {
-    justify-self: center;
-    padding: 2rem;
-    background-color: rgb(18, 95, 18);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    border-radius: 4px;
-}
-
-.input-grid > div{
-    display: flex;
-    flex-direction: column;    
-}
-
 form {
   padding: 1rem;
   max-width: 30rem;
@@ -20,12 +5,16 @@ form {
   border-radius: 4px;
   background: linear-gradient(180deg, #307e6c, #2b996d);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .input-group {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 label {
@@ -58,6 +47,7 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+  grid-column: span 2;
 }
 
 button:hover {
