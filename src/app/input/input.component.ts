@@ -13,7 +13,7 @@ export class InputComponent {
   initialInvestment = 0;
   anualInvestment = 0;
   duration = 0;
-  return = 0;
+  expectedReturn = 0;
 
   userInputData = {
   }
@@ -23,7 +23,7 @@ export class InputComponent {
       initialInvestment: this.initialInvestment,
       anualInvestment: this.anualInvestment,
       duration: this.duration,
-      return: this.return
+      expectedReturn: this.expectedReturn
     }
   }
 
@@ -31,7 +31,7 @@ export class InputComponent {
     this.initialInvestment = 0;
     this.anualInvestment = 0;
     this.duration = 0;
-    this.return = 0;
+    this.expectedReturn = 0;
     this.userInputData = {}
   }
 

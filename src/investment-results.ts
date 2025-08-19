@@ -2,7 +2,7 @@
 // e.g., integrate it into a service or component
 // You may need to tweak it, depending on where and how you use it
 
-function calculateInvestmentResults() {
+export function calculateInvestmentResults(initialInvestment:number, duration:number, annualInvestment:number, expectedReturn:number) {
   const annualData = [];
   let investmentValue = initialInvestment;
 
