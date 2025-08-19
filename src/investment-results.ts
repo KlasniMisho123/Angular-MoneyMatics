@@ -2,10 +2,10 @@
 // e.g., integrate it into a service or component
 // You may need to tweak it, depending on where and how you use it
 
-interface UserInputData {
+export interface UserInputData {
   initialInvestment:number,
-  duration:number,
   annualInvestment:number,
+  duration:number,
   expectedReturn:number
 }
 

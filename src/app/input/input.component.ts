@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule  } from '@angular/forms';
-import { calculateInvestmentResults } from '../../investment-results';
+import { calculateInvestmentResults, UserInputData } from '../../investment-results';
 
 @Component({
   selector: 'app-input',
@@ -12,13 +12,13 @@ import { calculateInvestmentResults } from '../../investment-results';
 export class InputComponent {
 
   initialInvestment = 0;
-  anualInvestment = 0;
+  annualInvestment = 0;
   duration = 0;
   expectedReturn = 0;
   
-  userInputData = {
+  userInputData:UserInputData = {
     initialInvestment: 0,
-    anualInvestment: 0,
+    annualInvestment: 0,
     duration: 0,
     expectedReturn: 0
   }
@@ -27,7 +27,7 @@ export class InputComponent {
   setData() {
     this.userInputData = {
       initialInvestment: this.initialInvestment,
-      anualInvestment: this.anualInvestment,
+      annualInvestment: this.annualInvestment,
       duration: this.duration,
       expectedReturn: this.expectedReturn
     }
@@ -35,13 +35,13 @@ export class InputComponent {
 
   clearData() {
     this.initialInvestment = 0;
-    this.anualInvestment = 0;
+    this.annualInvestment = 0;
     this.duration = 0;
     this.expectedReturn = 0;
-    
+
     this.userInputData = {
       initialInvestment: 0,
-      anualInvestment: 0,
+      annualInvestment: 0,
       duration: 0,
       expectedReturn: 0
     }
@@ -49,7 +49,7 @@ export class InputComponent {
 
   onSubmit() {
     this.setData()
-    calculateInvestmentResults(this.userInputData)
+    console.log("AnnualData: ", calculateInvestmentResults(this.userInputData))
     this.clearData() 
   }
 }
