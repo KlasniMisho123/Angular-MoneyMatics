@@ -12,6 +12,9 @@ export class InputComponent {
 
   initialInvestment = 0;
   anualInvestment = 0;
+  duration = 0;
+  return = 0;
+  
   setData() {
     console.log("initialInvestment: ", this.initialInvestment)
   }

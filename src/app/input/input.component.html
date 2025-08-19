@@ -4,14 +4,14 @@
         <input type="number" id="initialInvestment" name="initialInvestment" [(ngModel)]="initialInvestment" />
     
         <label>Expected Return</label>
-        <input />
+        <input type="number" id="return" name="return" [(ngModel)]="return" />
     </div>
     <div class="input-group">
         <label>Anual Investment</label>
-        <input type="int" id="anualInvestment" name="anualInvestment" [(ngModel)]="anualInvestment" />
+        <input type="number" id="anualInvestment" name="anualInvestment" [(ngModel)]="anualInvestment" />
 
         <label>Duration</label>
-        <input />
+        <input type="number" id="duration" name="duration" [(ngModel)]="duration" />
     </div>
         <button (click)="setData()"> Calculate </button>
 </form>
