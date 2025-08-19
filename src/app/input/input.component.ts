@@ -14,9 +14,18 @@ export class InputComponent {
   anualInvestment = 0;
   duration = 0;
   return = 0;
-  
+
+  userInputData = {
+  }
+
   setData() {
-    console.log("initialInvestment: ", this.initialInvestment)
+    this.userInputData = {
+      initialInvestment: this.initialInvestment,
+      anualInvestment: this.anualInvestment,
+      duration: this.duration,
+      return: this.return
+    }
+    console.log("userInputData: ", this.userInputData)
   }
 
   onSubmit() {
