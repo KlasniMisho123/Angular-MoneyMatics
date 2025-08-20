@@ -21,7 +21,7 @@ export class InputComponent {
     initialInvestment: 0,
     annualInvestment: 0,
     duration: 5,
-    expectedReturn: 0
+    expectedReturn: 10,
   }
   
   setData() {
@@ -33,8 +33,16 @@ export class InputComponent {
     }
   }
 
+  clearData() {
+    this.initialInvestment.set("0");
+    this.annualInvestment.set("0");
+    this.duration.set("5");
+    this.expectedReturn.set("10");
+  }
+
   onSubmit() {
-    this.setData()
-    this.calculate.emit(this.userInputData)
+    this.setData();
+    this.calculate.emit(this.userInputData);
+    this.clearData();
   }
 }
