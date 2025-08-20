@@ -2,12 +2,7 @@
 // e.g., integrate it into a service or component
 // You may need to tweak it, depending on where and how you use it
 
-export interface UserInputData {
-  initialInvestment:number,
-  annualInvestment:number,
-  duration:number,
-  expectedReturn:number
-}
+import { UserInputData } from "./app/investent-input.model";
 
 export function calculateInvestmentResults(userInputData:UserInputData) {
   const annualData = [];

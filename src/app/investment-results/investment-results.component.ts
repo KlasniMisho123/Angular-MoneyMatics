@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './investment-results.component.css'
 })
 export class InvestmentResultsComponent {
-  @Input() userData?: {
+  @Input() calculatedData?: {
     year: number,
     interest: number,
     valueEndOfYear: number,
@@ -16,4 +16,6 @@ export class InvestmentResultsComponent {
     totalInterest: number,
     totalAmountInvested: number,
   };
+
+
 }
