@@ -36,7 +36,7 @@ export class InputComponent {
   clearData() {
     this.initialInvestment.set("0");
     this.annualInvestment.set("0");
-    this.duration.set("5");
+    this.duration.set("10");
     this.expectedReturn.set("10");
   }
 

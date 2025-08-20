@@ -23,7 +23,7 @@ export class AppComponent {
   }[] | undefined>(undefined);
 
   onCalculateInvestmentResults(userInputData:UserInputData) {
-    this.calculateResults.set(calculateInvestmentResults(userInputData))
+    this.calculateResults.set((calculateInvestmentResults(userInputData)))
   }
   
 }
