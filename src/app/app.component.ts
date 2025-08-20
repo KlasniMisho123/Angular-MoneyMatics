@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { InputComponent } from './input/input.component';
 import { InvestmentResultsComponent } from './investment-results/investment-results.component';
-import { UserInputData } from '../investment-results';
+import { calculateInvestmentResults, UserInputData } from '../investment-results';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,10 @@ import { UserInputData } from '../investment-results';
 })
 export class AppComponent {
   userData?: UserInputData;
+  
+  calculateInvestmentResults(userInputData:UserInputData) {
+
+  }
 
   handleFormSubmit(data: UserInputData) {
     this.userData = data;

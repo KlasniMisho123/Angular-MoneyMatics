@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { calculateInvestmentResults, UserInputData } from '../../investment-results';
 
 @Component({
   selector: 'app-investment-results',
@@ -9,5 +8,12 @@ import { calculateInvestmentResults, UserInputData } from '../../investment-resu
   styleUrl: './investment-results.component.css'
 })
 export class InvestmentResultsComponent {
-  @Input() userData!: UserInputData;
+  @Input() userData?: {
+    year: number,
+    interest: number,
+    valueEndOfYear: number,
+    annualInvestment: number,
+    totalInterest: number,
+    totalAmountInvested: number,
+  };
 }
