@@ -1,6 +1,8 @@
 
-<p>Please enter some values and press "Calculate".</p>
-
+@if(!calculatedData){
+    <p class="center">Please enter some values and press "Calculate".</p>
+}
+@else {
 <table>
     <thead>
         <tr>
@@ -12,6 +14,15 @@
         </tr>
     </thead>
     <tbody>
-        {{calculatedData?.year}}
+        @for (data of calculatedData; track data.year) {
+            <tr>
+                <td>{{data.year}}</td>
+                <td>{{data.annualInvestment}}</td>
+                <td>{{data.interest}}</td>
+                <td>{{data.totalInterest}}</td>
+                <td>{{data.totalAmountInvested}}</td>
+            </tr>
+        }
     </tbody>
 </table>
+}
